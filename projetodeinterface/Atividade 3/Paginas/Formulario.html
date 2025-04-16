@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro GShowSky</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro GShowSky</h1>
+    <p>Crie sua conta no GShowSky e aproveite suas jogatinas!</p>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Informações de Conta</legend>
+        <label>Nome: <input type="text" name="usuario" required></label><br>
+        <label>Nome de Usuário: <input type="text" name="pais" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Senha: <input type="password" name="senha" required></label><br>
+        <label>Data de nascimento: <input type="date" name="nascimento"></label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências de Jogos</legend>
+        <label>Gêneros favoritos: </label><br>
+        <input type="checkbox" name="generos" value="FPS" required> FPS<br>
+        <input type="checkbox" name="generos" value="RPG" required> RPG<br>
+        <input type="checkbox" name="generos" value="Aventura" required> Simulação<br>
+        <input type="checkbox" name="generos" value="Metroidvania" required> Esportes<br>
+        <input type="checkbox" name="generos" value="Terror/Horror" required> Terror<br>
+        <input type="checkbox" name="generos" value="Mundo aberto" required> Estratégia<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Configurações</legend>
+        <label>Deseja receber notificações?</label><br>
+        <input type="radio" name="notificacoes" value="sim" required> Sim<br>
+        <input type="radio" name="notificacoes" value="nao" required> Não<br><br>
+
+        <label>Plataforma principal:</label>
+        <select name="plataforma">
+          <option>PC</option>
+          <option>Console</option>
+          <option>Mobile</option>
+        </select><br><br>
+
+        <label>Link do seu perfil gamer: <input type="url" name="perfil"></label><br>
+        <label>Jogo favorito: <input type="text" name="jogo_fav"></label><br>
+        <label>Horas jogadas por semana: <input type="number" name="horas"></label><br>
+        <label>Horário preferido para jogar: <input type="time" name="hora"></label><br>
+      </fieldset>
+
+      <input type="submit" value="Criar Conta">
+      <input type="reset" value="Resetar">
+    </form>
+  </main>
+</body>
+</html>
